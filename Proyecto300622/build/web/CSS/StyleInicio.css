@@ -1,0 +1,714 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #333;
+    background-image: url();
+}
+/*Encabezado--------------------------------------------------------------*/
+.headerInicio {
+    width: 98,5%;
+    border: ridge rgb(19, 202, 95) 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    display: block;
+    justify-content: center;
+}
+
+.imgEncabezado {
+    width: 500px;
+    font-size: 35px;
+}
+
+/*Menu--------------------------------------------------------------------*/
+.menu {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+}
+
+.menuHorizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuHorizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menuHorizontal > li:hover{
+    background-color: rgb(19, 202, 95);
+}
+
+.menuHorizontal > li > a:hover{
+    color: black;
+}
+
+.menuHorizontal > li:hover .menuVertical{
+    display: block;
+} 
+
+.menuVertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+ .menuVertical li:hover{
+    background-color: rgb(19, 202, 95);
+ }
+
+.menuVertical > li >a:hover{
+    color: black;
+}
+
+.menuVertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/*Inicio------------------------------------------------------------------*/
+#Inicio {
+    margin: auto;
+    border: ridge rgb(19, 202, 95) 10px;
+    width: 98,5%;
+    height: 450px;
+    background-color: white;
+    /*background-image: url(../RESOURCE/fondoimg.jpg);*/
+    background-image: url(../RECURSOS/fondocentro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    
+}
+
+.infoDerecha {
+    margin: 20px;
+    height: 365px;
+    /*border: solid rgb(19, 83, 202) 1px;*/
+    width: 450px;
+    padding: 0px;
+    /*background-color: rgb(19, 202, 95);*/
+}
+
+.bloque21 {
+    border: solid black 10px;
+    width: 430px;
+    height: 150px;
+    margin-bottom: 30px;
+    background-color: white;
+    background-image: url(../RECURSOS/bloque21.png);
+    background-size: 430px;
+}
+
+.bloque22 {
+    border: solid black 10px;
+    width: 430px;
+    height: 150px;
+    background-color: white;
+}
+
+/*SLIDERE DERECHA*/
+.Slider2{
+    width: 430px;
+    border: 1px solid black;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+}
+
+.Slider2 ul{
+    padding: 0px;
+    display: flex;
+    width: 430px;
+    animation: cambio 30s infinite;
+    animation-direction: alternate;
+}
+
+.Slider2 li{
+    list-style: none;
+    width: 430px;
+    height: 150px;
+    display: flex;
+    display: flex;
+}
+.Slider2 img{
+    width: 215px;
+    height: 150px;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0px;}
+    13.63% { margin-left: 0px;}
+
+    17.26% { margin-left: -430px;}
+    30.89% { margin-left: -430px;}
+    
+    34.52% { margin-left: -860px;}
+    48.15% { margin-left: -860px;}
+    
+    51.78% { margin-left: -1290px;}
+    65.41% { margin-left: -1290px;}
+    
+    69.04% { margin-left: -1720px;}
+    82.67% { margin-left: -1720px;}
+    
+    86.30% { margin-left: -2150px;}
+    100%   { margin-left: -2150px;}
+}
+/*__________________________________________________________________________*/
+
+.infoCentro {
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 90px;
+    height: 350px;
+    border: solid rgb(0, 0, 0) 10px;
+    width: 500px;
+    background-color: white;
+}
+
+.infoIzquierda {
+    margin: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 365px;
+    /*border: solid rgb(0, 0, 0) 1px;*/
+    width: 200px;
+    /*background-color: rgb(19, 202, 95) ;*/
+}
+
+.bloque11{
+    margin-bottom: 15px;
+    border: solid black 10px;
+    height: 250px;
+    width: 180px;
+    background-color: white;
+}
+
+/*Slider bloqueIzquierda*/
+
+.Slider1{
+    width: 180px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Slider1 ul{
+    padding: 0px;
+    display: flex;
+    width: 180px;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+}
+
+.Slider1 li{
+    list-style: none;
+    width: 180px;
+}
+.Slider1 img{
+    width: 180px;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0px;}
+    5% { margin-left: 0px;}
+
+    8.63% { margin-left: -180px;}
+    13.63% { margin-left: -180px;}
+
+    17.26% { margin-left: -360px;}
+    22.26% { margin-left: -360px;}
+
+    25.89% { margin-left: -540px;}
+    30.89% { margin-left: -540px;}
+    
+    34.52% { margin-left: -720px;}
+    39.52% { margin-left: -720px;}
+    
+    43.15% { margin-left: -900px;}
+    48.15% { margin-left: -900px;}
+    
+    51.78% { margin-left: -1080px;}
+    56.78% { margin-left: -1080px;}
+    
+    60.41% { margin-left: -1260px;}
+    65.41% { margin-left: -1260px;}
+    
+    69.04% { margin-left: -1440px;}
+    74.04% { margin-left: -1440px;}
+    
+    77.67% { margin-left: -1620px;}
+    82.67% { margin-left: -1620px;}
+    
+    86.30% { margin-left: -1800px;}
+    91.30% { margin-left: -1800px;}
+    
+    94.93% { margin-left: -1980px;}
+    100%   { margin-left: -1980px;}
+}
+
+/*____________________________________________*/
+.bloque12{
+    margin: 0px;
+    border: solid black 10px;
+    height: 60px;
+    width: 180px;
+    background-color: white;
+    background-image: url(../RECURSOS/boque12.png);
+    background-size: 180px;
+
+}
+
+
+
+/*Seccion-----------------------------------------------------------------*/
+.CUERPO section{
+    display: flex;
+}
+
+section {
+    margin: 0 auto;
+    margin-top: -400px;
+    /*border: solid white 4px;*/
+    width: 800px;
+    height: 350px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+    /*PEDIDO--------------------------------------------------------------*/
+.cuerpoPedido{
+    /*background-image: linear-gradient(to left, rgb(19, 202, 95), rgb(46, 92, 139));*/
+    background-color: white;
+    margin: 15px;
+    border: ridge rgb(19, 202, 95) 10px;
+    width: 500px;
+    height: 300px;
+}
+
+section .headerPedido{
+    /*border: solid seagreen 1px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #333;
+    display: flex;
+}
+
+.headerPedido h3{
+    margin-left: 150px;
+    padding: 3px;
+}
+        /*bnt Cerrar------------------------------------------------------*/
+.bntCerrar {
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    background-color: white;
+    margin: 4px;
+    margin-left: 112px;
+}
+
+.bntCerrar p a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bntCerrar:hover{
+    margin: auto;
+    margin-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    background-color: red;
+}
+
+.bntCerrar p a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+        /*----------------------------------------------------------------*/
+
+#formularioCamisetas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.pInfPedido {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.tablaColores{
+    border: solid #333 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.divColor h3{
+    display: block;
+    text-align: center;
+    width: 500px;
+}
+
+.EncabezadoColor{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.divFormularioPedido h2{
+    text-align: center;
+}
+
+.EncabezadoColor{
+    margin-top: 10px;
+}
+
+.divColor label{
+    padding: 0px;
+    margin-left: 40px;
+}
+
+#colorLima{
+    margin-right: 70px;
+}
+
+#colorRojo{
+    margin-left: 2px;
+    margin-right: 70px;
+}
+
+#colorAzul{
+    margin-left: 2px;
+    margin-right: 70px;
+}
+
+#colorVerde{
+    margin-left: 12px;
+    margin-right: 70px;
+}
+
+#colorVioleta{
+    margin-left: 4px;
+    margin-right: 70px;
+}
+
+#colorNaranja{
+    margin-right: 70px;
+}
+
+#colorCian{
+    margin-left: 28px;
+}
+
+#colorMorado{
+    margin-left: 8px;
+}
+    /*Cuadro complementos*/
+.EncabezadoComplementos h3{
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.CuerpoComplementos{
+    border: solid #333 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.CuerpoComplementos{
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------*/
+.divMangaLargo p{
+    margin-left: 20px;
+}
+.divMangaLargo{
+    display: flex;
+    justify-content: center;
+}
+.divManga{
+    margin-left: 7px;
+    margin-right: 10px;
+}
+/*------------------------*/
+.divAnchoHombro{
+    display: flex;
+    justify-content: center;
+}
+.divAnchoHombro p{
+    margin-left:35px;
+}
+.divHombro{
+    padding-left: 10px;
+    margin-right: 10px;
+    border-left: solid #333 2px;
+}
+/*------------------------*/
+.divLargoCamisa{
+    display: flex;
+}
+.divLargoCamisa p{
+    margin-left: 2px;
+}
+.divLargo{
+    padding-left: 10px;
+    margin-right: 10px;
+    border-left: solid #333 2px;
+}
+/*------------------------*/
+.divCuello{
+    padding-left: 10px;
+    margin-right: 10px;
+    border-left: solid #333 2px;
+}
+
+.btnFormPedido{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#btnEnviarPedido{
+    margin-right: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnResetPedido{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*INICIO DE SESSION---------------------------------------------------*/
+
+.divFormulario{
+    /*background-image: linear-gradient(to left, rgb(19, 202, 95), rgb(46, 92, 139));*/
+    background-color: white;
+    margin: 15px;
+    border: ridge rgb(19, 202, 95) 10px;
+    width: 500px;
+    height: 300px;
+}
+
+.barraInicioSesion{
+    display: flex;
+    padding: 0px;
+    background-color: #333;
+}
+
+.txtInicioSesion{
+    /*border: solid black 1px;*/
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    padding-top: 7px;
+    color: white;
+    background-color: #333;
+    margin-left: 190px;
+}
+        /*bnt Cerrar------------------------------------------------------*/
+.bntCerrarInicioSesion{
+    background-color: white;
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 147px;
+}    
+
+.bntCerrarInicioSesion p a{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bntCerrarInicioSesion:hover{
+    background-color: rgb(255, 0, 0);
+    margin: 4px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    padding-top: 4px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 147px;
+}    
+
+.bntCerrarInicioSesion p a:hover{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.divUsuario{
+    /*border: solid black 1px;*/
+    display: flex;
+    justify-content:center ;
+    padding: 0px;
+    margin-top: 40px;
+}
+
+.divContrasena{
+    /*border: solid black 1px;*/
+    display: flex;
+    justify-content:center ;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tituloUsuario {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#txtUsuario{
+    margin-left: 50px;
+}
+
+.tituloContrasena{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#txtContrasena{
+    margin-left: 10px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    /*border: solid black 1px;*/
+}
+
+.BorrarDatos{
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnEnviar{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*CREAR CUENTA--------------------------------------------------------*/
+
+.divRegistro{
+    border: ridge rgb(19, 202, 95) 10px;
+    background-color: white;
+}
+.EncabezadoRegistro{
+    display: flex;
+    justify-content: right;
+    background-color: #333;
+}
+.divRegistro h2{
+    /*border: solid black 2px;*/
+    text-align: center;
+    padding-top: 7px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-right: 40px;
+}
+#formularioRegistro{
+    /*border: solid black 2px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedorNombreApellido{
+    /*border: solid black 2px;*/
+    margin-bottom: 10px;
+}
+#txtNombre{
+    margin-right:90px;
+}
+#txtRepitaContrasena{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.contenedorUsuarioGenerado{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+        /*----------------------------------------------------------------*/
+/*
+section{
+    border: solid white 4px;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+*/
+/*Pie de pagina-----------------------------------------------------------*/
+footer {
+    background-color: white;
+    margin-top: 70px;
+    border: solid black 4px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+}
+
+footer p{
+    text-align: center;
+    margin: 8px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #333;
+    background-image: url();
+}
+
+
+/*Encabezado--------------------------------------------------------------*/
+.headerInicio {
+    width: 98,5%;
+    border: ridge rgb(19, 202, 95) 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header div{
+    display: block;
+    justify-content: center;
+}
+
+.imgEncabezado {
+    width: 500px;
+    font-size: 35px;
+}
+
+/*Menu--------------------------------------------------------------------*/
+.menu {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+}
+
+.menuHorizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuHorizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menuHorizontal > li:hover{
+    background-color: rgb(19, 202, 95);
+}
+
+.menuHorizontal > li > a:hover{
+    color: black;
+}
+
+.menuHorizontal > li:hover .menuVertical{
+    display: block;
+} 
+
+.menuVertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+ .menuVertical li:hover{
+    background-color: rgb(19, 202, 95);
+ }
+
+.menuVertical > li >a:hover{
+    color: black;
+}
+
+.menuVertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/*Inicio------------------------------------------------------------------*/
+#Inicio {
+    margin: auto;
+    border: ridge rgb(19, 202, 95) 10px;
+    width: 98,5%;
+    height: 420px;
+    background-color: white;
+    /*background-image: url(../RESOURCE/fondoimg.jpg);*/
+    background-image: url(../RECURSOS/fondocentro.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    
+}
+
+.infoDerecha {
+    margin: 20px;
+    height: 365px;
+    /*border: solid rgb(19, 83, 202) 1px;*/
+    width: 450px;
+    padding: 0px;
+    /*background-color: rgb(19, 202, 95);*/
+}
+
+.bloque21 {
+    border: solid black 10px;
+    width: 430px;
+    height: 150px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.bloque22 {
+    border: solid black 10px;
+    width: 430px;
+    height: 150px;
+    background-color: white;
+}
+
+.infoCentro {
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 350px;
+    border: solid rgb(0, 0, 0) 10px;
+    width: 500px;
+    background-color: white;
+}
+
+.infoIzquierda {
+    margin: 20px;
+    height: 365px;
+    /*border: solid rgb(0, 0, 0) 1px;*/
+    width: 200px;
+    /*background-color: rgb(19, 202, 95) ;*/
+}
+
+.bloque11{
+    margin-bottom: 15px;
+    border: solid rgb(0, 0, 0) 10px;
+    height: 250px;
+    width: 180px;
+    background-color: white;
+    background-image: url(../RECURSOS/fondobloque11.jpg);
+}
+
+.bloque12 {
+    margin: 0px;
+    border: solid rgb(0, 0, 0) 10px;
+    height: 60px;
+    width: 180px;
+    background-color: white;
+    background-image: url(../RECURSOS/boque12.png);
+    background-size: 180px;
+}
+
+/*Seccion-----------------------------------------------------------------*/
+section {
+    margin: 0 auto;
+    margin-top: -400px;
+    border: ridge white 1px;
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+}
+
+.cuerpoPedido{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: ridge rgb(19, 202, 95) 10px;
+    width: 500px;
+    height: 300px;
+}
+
+section .headerPedido{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.headerPedido h3{
+    
+}
+
+section .divFormularioPedido{
+    border: solid seagreen 1px;
+}
+
+/*
+section{
+    border: solid white 4px;
+    height: 200px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+*/
+/*Pie de pagina-----------------------------------------------------------*/
+footer {
+    border: solid black 4px;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    background-color: #333;
+}
+
+footer p{
+    margin: 8px;
+    color: white;
+}
